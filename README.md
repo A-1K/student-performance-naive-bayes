@@ -60,28 +60,6 @@ Per-class performance for the from-scratch model:
 | Low | 0.9599 | 0.8885 | 0.9228 | 323 |
 | Medium | 0.6148 | 0.8824 | 0.7246 | 85 |
 
-## Repository structure
-
-```text
-student-performance-naive-bayes/
-├── data/
-│   ├── student_performance_data.csv
-│   └── README.md
-├── plots/
-│   ├── accuracy_comparison.png
-│   ├── bayesian_network.png
-│   ├── confusion_matrices.png
-│   ├── correlation_heatmap.png
-│   ├── feature_distributions.png
-│   └── information_flow.png
-├── results/
-│   └── results.json
-├── student_performance_naive_bayes.ipynb
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
 ## How to run
 
 Clone the repository:
