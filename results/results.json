@@ -1,0 +1,30 @@
+{
+  "dataset_name": "Students Performance Dataset (Kaggle - rabieelkharoua)",
+  "num_samples": "2392",
+  "features": [
+    "StudyTimeWeekly",
+    "Absences",
+    "Tutoring",
+    "ParentalSupport",
+    "Extracurricular",
+    "Gender",
+    "Ethnicity",
+    "ParentalEducation",
+    "GPA"
+  ],
+  "accuracy_scratch": "0.860125",
+  "accuracy_sklearn": "0.85595",
+  "selected_features": [
+    "StudyTimeWeekly",
+    "Absences",
+    "Tutoring",
+    "ParentalSupport",
+    "Extracurricular",
+    "Gender",
+    "Ethnicity",
+    "ParentalEducation",
+    "GPA"
+  ],
+  "removed_features": [],
+  "observations": "Mixed Naive Bayes from scratch achieved 86.01% accuracy using Gaussian likelihoods for continuous features (StudyTimeWeekly, Absences, GPA), Bernoulli likelihoods for binary features (Tutoring, Extracurricular), and Categorical likelihoods for discrete features (Gender, Ethnicity, ParentalEducation, ParentalSupport). sklearn GaussianNB achieved 85.59%. The difference of 0.42% reflects the more theoretically appropriate treatment of binary and categorical features. Information flow analysis demonstrated causal, evidential, and explaining-away effects using StudyTimeWeekly, Performance, Absences, and GPA."
+}
