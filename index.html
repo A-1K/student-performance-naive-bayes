@@ -312,9 +312,11 @@ tbody tr:hover td { background: var(--bg); }
 /* ─── PLOTS ─── */
 .plot-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
 }
+.plot-wide { grid-column: 1 / -1; }
+@media(max-width:560px){ .plot-grid { grid-template-columns: 1fr; } }
 .plot-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -646,14 +648,24 @@ predicted class  =  argmax [ log-posterior ]</div>
   </div>
   <div class="plot-grid reveal">
 
-    <div class="plot-card">
-      <img src="plots/confusion_matrix.png" alt="Confusion Matrix"
+    <div class="plot-card plot-wide">
+      <img src="plots/confusion_matrices.png" alt="Confusion Matrices"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
       <div class="plot-placeholder" style="display:none;">
         <div class="ph-icon">⬚</div>
-        <div class="ph-name">plots/confusion_matrix.png</div>
+        <div class="ph-name">plots/confusion_matrices.png</div>
       </div>
-      <div class="plot-cap">Confusion matrix — Custom Mixed Naive Bayes</div>
+      <div class="plot-cap">Confusion matrices — scratch vs. sklearn</div>
+    </div>
+
+    <div class="plot-card plot-wide">
+      <img src="plots/accuracy_comparison.png" alt="Accuracy Comparison"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="plot-placeholder" style="display:none;">
+        <div class="ph-icon">⬚</div>
+        <div class="ph-name">plots/accuracy_comparison.png</div>
+      </div>
+      <div class="plot-cap">Model comparison — overall accuracy &amp; per-class F1</div>
     </div>
 
     <div class="plot-card">
@@ -663,37 +675,27 @@ predicted class  =  argmax [ log-posterior ]</div>
         <div class="ph-icon">⬚</div>
         <div class="ph-name">plots/feature_distributions.png</div>
       </div>
-      <div class="plot-cap">Feature distributions by class</div>
+      <div class="plot-cap">Feature distributions by performance class</div>
     </div>
 
     <div class="plot-card">
-      <img src="plots/roc_curve.png" alt="ROC Curve"
+      <img src="plots/correlation_heatmap.png" alt="Correlation Heatmap"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
       <div class="plot-placeholder" style="display:none;">
         <div class="ph-icon">⬚</div>
-        <div class="ph-name">plots/roc_curve.png</div>
+        <div class="ph-name">plots/correlation_heatmap.png</div>
       </div>
-      <div class="plot-cap">ROC curve — one-vs-rest multi-class</div>
+      <div class="plot-cap">Pearson correlation matrix — feature interactions</div>
     </div>
 
-    <div class="plot-card">
-      <img src="plots/accuracy_comparison.png" alt="Accuracy Comparison"
+    <div class="plot-card plot-wide">
+      <img src="plots/information_flow.png" alt="Information Flow"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
       <div class="plot-placeholder" style="display:none;">
         <div class="ph-icon">⬚</div>
-        <div class="ph-name">plots/accuracy_comparison.png</div>
+        <div class="ph-name">plots/information_flow.png</div>
       </div>
-      <div class="plot-cap">Accuracy comparison — custom vs. sklearn</div>
-    </div>
-
-    <div class="plot-card">
-      <img src="plots/class_distribution.png" alt="Class Distribution"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-      <div class="plot-placeholder" style="display:none;">
-        <div class="ph-icon">⬚</div>
-        <div class="ph-name">plots/class_distribution.png</div>
-      </div>
-      <div class="plot-cap">Class distribution in dataset</div>
+      <div class="plot-cap">Information flow — causal, evidential, explaining away</div>
     </div>
 
     <div class="plot-card">
@@ -703,7 +705,7 @@ predicted class  =  argmax [ log-posterior ]</div>
         <div class="ph-icon">⬚</div>
         <div class="ph-name">plots/bayesian_network.png</div>
       </div>
-      <div class="plot-cap">Bayesian network structure</div>
+      <div class="plot-cap">Naive Bayes Bayesian network structure</div>
     </div>
 
   </div>
