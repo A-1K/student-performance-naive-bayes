@@ -18,7 +18,7 @@ This project compares two Naive Bayes implementations:
 
 The goal is not only prediction, but also explaining the probabilistic assumptions behind Naive Bayes, including conditional independence, Bayesian Network structure, and information flow.
 
-https://a-1k.github.io/stats-proj-naive-bayes/#plots
+https://a-1k.github.io/stats-proj-naive-bayes/
 
 
 ## How to run
