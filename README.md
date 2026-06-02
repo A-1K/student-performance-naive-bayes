@@ -18,47 +18,8 @@ This project compares two Naive Bayes implementations:
 
 The goal is not only prediction, but also explaining the probabilistic assumptions behind Naive Bayes, including conditional independence, Bayesian Network structure, and information flow.
 
-## Dataset
+https://a-1k.github.io/stats-proj-naive-bayes/#plots
 
-- **Source:** Kaggle — `rabieelkharoua/students-performance-dataset`
-- **Rows:** 2,392 student records
-- **Target:** `Performance`, derived from `GradeClass`
-  - `GradeClass` 0 or 1 → High
-  - `GradeClass` 2 → Medium
-  - `GradeClass` 3 or 4 → Low
-
-> Before making this repository public, check the Kaggle dataset license/terms and make sure redistribution of the CSV is allowed. If not, remove `data/student_performance_data.csv` and replace it with download instructions.
-
-## Features used
-
-| Feature | Type used in model | Description |
-|---|---|---|
-| `StudyTimeWeekly` | Gaussian | Weekly study hours |
-| `Absences` | Gaussian | Number of absences |
-| `Tutoring` | Bernoulli | Whether the student receives tutoring |
-| `ParentalSupport` | Categorical | Parent support level |
-| `Extracurricular` | Bernoulli | Participation in extracurricular activities |
-| `Gender` | Categorical | Gender category code |
-| `Ethnicity` | Categorical | Ethnicity category code |
-| `ParentalEducation` | Categorical | Parent education level |
-| `GPA` | Gaussian | Grade point average |
-
-## Results
-
-Using a fixed random seed of `42` and an 80/20 train-test split:
-
-| Model | Accuracy |
-|---|---:|
-| From-scratch Mixed Naive Bayes | **86.01%** |
-| scikit-learn GaussianNB | **85.59%** |
-
-Per-class performance for the from-scratch model:
-
-| Class | Precision | Recall | F1-score | Support |
-|---|---:|---:|---:|---:|
-| High | 0.8621 | 0.7042 | 0.7752 | 71 |
-| Low | 0.9599 | 0.8885 | 0.9228 | 323 |
-| Medium | 0.6148 | 0.8824 | 0.7246 | 85 |
 
 ## How to run
 
