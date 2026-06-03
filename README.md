@@ -4,10 +4,10 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-Baseline-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A technical course statistics project that models student academic performance using a Naive Bayes Bayesian Network.  
+A technical course statistics project that models student academic performance using a Mixed Naive Bayes Classifier.  
 The model predicts whether a student falls into a **High**, **Medium**, or **Low** performance tier using academic, behavioral, and demographic features.
 
-[text](https://a-1k.github.io/stats-proj-naive-bayes/)
+**[View the Project Documentation](https://a-1k.github.io/stats-proj-naive-bayes/)**
 
 ## Project overview
 
