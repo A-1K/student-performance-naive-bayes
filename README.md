@@ -7,7 +7,7 @@
 A technical course statistics project that models student academic performance using a Mixed Naive Bayes Classifier.  
 The model predicts whether a student falls into a **High**, **Medium**, or **Low** performance tier using academic, behavioral, and demographic features.
 
-**[View the Project Documentation](https://a-1k.github.io/stats-proj-naive-bayes/)**
+**[View the Project Documentation](https://a-1k.github.io/student-performance-naive-bayes/)**
 
 ## Project overview
 
